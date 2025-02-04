@@ -17,6 +17,7 @@ def day_two(report) -> bool:
     safe_flag = True
 
     if inc_flag or dec_flag:
+        damp_count = 1
         while idx < len(report):
             diff = abs(report[idx] - report[idx-1])
             if diff < 1 or diff > 3:
